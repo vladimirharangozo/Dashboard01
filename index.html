@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <title>Dashboard Demo page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container-all">
+        <aside class="hidden-sm hidden-xs">
+            <header> <img class="foto" src="img/avatar2.jpg" alt="" width="45px">Vladimir H.</header>
+            <nav>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                        <a class="nav-link" href="index.html">
+                            <span class="nav-link-text">DASHBOARD</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Course">
+                        <a class="nav-link" href="course.html">
+                            <span class="nav-link-text">COURSE</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Exam">
+                        <a class="nav-link" href="exam.html">
+                            <span class="nav-link-text">EXAM</span>
+                        </a>
+                    </li>
+                    
+                    <li><a href="#q&a.html" class="">Q&A</a></li>
+                    
+                    <li><a href="#news.html" class="">NEWS</a></li>
+                    
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <header>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header header">
+                            <div class="nav navbar-nav">
+                                <button type="button" class="btn btn-link"><i class="myicon-user"></i></button>
+                                <button type="button" class="btn btn-link"><i class="myicon-chat"></i></button>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                                            <i class="myicon-notification"></i> <span class="badge badge-danger">2</span></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">First Message</a></li>
+                                        <li><a href="#">Second Message</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+
+                            <form class="navbar-form" action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" name="search">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="nav navbar-nav user">
+                                <div class="user-buttons">
+                                    <button type="button" class="btn navbar-btn btn-info" data-toggle="modal" data-target="#myModal2" data-tooltip data-placement="bottom" title="Edit"><i class="myicon-edit"></i></button>
+                                    <button type="button" class="btn navbar-btn btn-info" data-toggle="modal" data-target="#myModal" data-tooltip title="Logout"><i class="myicon-logout"></i></button>
+                                </div>
+                                <div class="user-info hidden-xs">
+                                    <div class="user-foto"><img src="img/avatar2.jpg" alt=""></div>
+                                    <div class="user-desc">
+                                        <h2>Vladimír Harangozó<img src="/img/icons/stars.png" alt=""></h2>
+                                        <h3>Student<i class="myicon-dot"></i> <a href="#">Learn more</a></h3>
+                                        <var><img src="/img/icons/icon-xp.png" alt=""> 8,728 exp</var>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" class="active">Knowledge</a></li>
+                                <li><a href="#menu1a">Course</a></li>
+                                <li><a href="#menu3a">Exam</a></li>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#title-3">Activity</a></li>
+                                <li><a href="#collapse1">Friends</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section id="main">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="main-panel">
+                                <ul class="nav nav-tabs text-center">
+                                    <li class="active"><a data-toggle="tab" href="#menu1a"><b>12</b>Course</a></li>
+                                    <li><a data-toggle="tab" href="#menu1b"><b>3</b>Unfinished Course</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="menu1a" class="tab-pane fade in active">
+                                        <div class="panel-group">
+                                            <div class="panel panel-default">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                </ul>
+                                                <div id="collapse1a" class="panel-collapse collapse">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-right">
+                                                    <a data-toggle="collapse" href="#collapse1a">show more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menu1b" class="tab-pane fade">
+                                        <div class="panel-group">
+                                            <div class="panel panel-default">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                </ul>
+                                                <div id="collapse1b" class="panel-collapse collapse">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-right">
+                                                    <a data-toggle="collapse" href="#collapse1b">show more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="main-panel">
+                                <ul class="nav nav-tabs text-center">
+                                    <li class="active"><a data-toggle="tab" href="#menu2a"><b>27</b>Asking Questions</a></li>
+                                    <li><a data-toggle="tab" href="#menu2b"><b>7</b>Answered Questions</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="menu2a" class="tab-pane fade in active">
+                                        <div class="panel-group">
+                                            <div class="panel panel-default">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                </ul>
+                                                <div id="collapse2a" class="panel-collapse collapse">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-right">
+                                                    <a data-toggle="collapse" href="#collapse2a">show more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menu2b" class="tab-pane fade">
+                                        <div class="panel-group">
+                                            <div class="panel panel-default">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                    <li class="list-group-item">Lorem ipsum...</li>
+                                                </ul>
+                                                <div id="collapse2b" class="panel-collapse collapse">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                        <li class="list-group-item">Lorem ipsum...</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-right">
+                                                    <a data-toggle="collapse" href="#collapse2b">show more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-sm"></div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="main-panel">
+                                <ul class="nav nav-tabs text-center">
+                                    <li class="active"><a data-toggle="tab" href="#menu3a"><b>19</b>Following Exams</a></li>
+                                    <li><a data-toggle="tab" href="#menu3b"><b>88</b>Exam</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="menu3a" class="tab-pane fade in active">
+                                        <div class="panel-group">
+                                            <div class="panel panel-default">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="progress progress-vertical">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height: 70%">
+                                                            </div>
+                                                        </div>
+                                                        Lorem ipsum...
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="progress progress-vertical">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%">
+                                                            </div>
+                                                        </div>
+                                                        Lorem ipsum...
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="progress progress-vertical">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 100%">
+                                                            </div>
+                                                        </div>
+                                                        Lorem ipsum...
+                                                    </li>
+                                                </ul>
+                                                <div id="collapse3a" class="panel-collapse collapse">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <div class="progress progress-vertical">
+                                                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height: 70%">
+                                                                </div>
+                                                            </div>
+                                                            Lorem ipsum...
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="progress progress-vertical">
+                                                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%">
+                                                                </div>
+                                                            </div>
+                                                            Lorem ipsum...
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="progress progress-vertical">
+                                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 100%">
+                                                                </div>
+                                                            </div>
+                                                            Lorem ipsum...
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-right">
+                                                    <a data-toggle="collapse" href="#collapse3a">show more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menu3b" class="tab-pane fade">
+                                        <div class="panel-group">
+                                            <div class="panel panel-default">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="progress progress-vertical">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height: 70%">
+                                                            </div>
+                                                        </div>
+                                                        Lorem ipsum...
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="progress progress-vertical">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%">
+                                                            </div>
+                                                        </div>
+                                                        Lorem ipsum...
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="progress progress-vertical">
+                                                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 100%">
+                                                            </div>
+                                                        </div>
+                                                        Lorem ipsum...
+                                                    </li>
+                                                </ul>
+                                                <div id="collapse3b" class="panel-collapse collapse">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <div class="progress progress-vertical">
+                                                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height: 70%">
+                                                                </div>
+                                                            </div>
+                                                            Lorem ipsum...
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="progress progress-vertical">
+                                                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%">
+                                                                </div>
+                                                            </div>
+                                                            Lorem ipsum...
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="progress progress-vertical">
+                                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 100%">
+                                                                </div>
+                                                            </div>
+                                                            Lorem ipsum...
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="panel-footer text-right">
+                                                    <a data-toggle="collapse" href="#collapse3b">show more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12">
+                            <div class="row">
+                                <div class="main-panel">
+                                    <div class="panel-group">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <ul class="nav nav-tabs text-left">
+                                                    <h3 class="title-3">Experience gained</h3>
+                                                    <img src="img/icons/graph-bar.png">
+                                                    <h3 class="title-3">Experience per day</h3>
+                                                    <img src="/img/icons/graph.png">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="main-panel">
+                                            <div class="panel-group">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <li><a data-toggle="collapse" href="#collapse1">Friend Activity</a></li>
+                                                        </h4>
+                                                    </div>
+                                                    <ul class="list-group">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="avatar-name">ABC</span> Finished the course: <b>Lorem ipsum dolor sit amet...</b>
+                                                                <time>123</time>
+                                                            </li>
+                                                            <li>
+                                                                <span class="avatar-name">DEF</span> Finished the course: <b>Lorem ipsum dolor sit amet...</b>
+                                                                <time>123</time>
+                                                            </li>
+                                                            <li>
+                                                                <span class="avatar-name">GHI</span> Finished the course: <b>Lorem ipsum dolor sit amet...</b>
+                                                                <time>123</time>
+                                                            </li>
+                                                            <li>
+                                                                <span class="avatar-name">JKL</span> Finished the course: <b>Lorem ipsum dolor sit amet...</b>
+                                                                <time>123</time>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                    <div id="collapse4" class="panel-collapse collapse">
+                                                        <ul class="list-group">
+                                                            <ul>
+                                                                <li>
+                                                                    <span class="avatar-name">ABC</span> Finished the course: <b>Lorem ipsum dolor sit amet...</b>
+                                                                    <time>123</time>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="avatar-name">DEF</span> Finished the course: <b>Lorem ipsum dolor sit amet...</b>
+                                                                    <time>123</time>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="avatar-name">GHI</span> Finished the course: <b>Lorem ipsum dolor sit amet...</b>
+                                                                    <time>123</time>
+                                                                </li>
+                                                                <li>
+                                                                    <span class="avatar-name">JKL</span> Finished the course: <b>Lorem ipsum dolor sit amet...</b>
+                                                                    <time>123</time>
+                                                                </li>
+                                                            </ul>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="panel-footer text-right">
+                                                        <a data-toggle="collapse" href="#collapse4">show more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">You were signed out!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Thanks for your visit. Please press button <b>Close</b>.</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-danger pull-left">Log out</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Editing option</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Nothing can be edited. Please press button <b>Close</b>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
